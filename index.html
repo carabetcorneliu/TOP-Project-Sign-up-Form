@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TOP - Project: Sign-up Form</title>
   <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="script.js" defer></script>
 </head>
 
 <body>
@@ -30,43 +31,43 @@
       <p>You <em>know</em> you want to.</p>
     </div>
     <div class="secondRow">
-      <form action="" method="get">
+      <form id="regForm" action="index.html" method="get" autocomplete="on" >
         <legend>Let's do this!</legend>
         <div class="formRow">
           <div class="formCol">
-          <label for="firstName">FIRST NAME</label>
-          <input type="text" id="firstName" name="firstName" value="Thor" />
+          <label for="firstName" >FIRST NAME</label>
+          <input type="text" id="firstName" name="firstName" value="Thor" autocomplete="on" required/>
         </div>
         <div class="formCol">
           <label for="lastName">LAST NAME</label>
-          <input type="text" id="lastName" name="lastName" value="Odinson" />
+          <input type="text" id="lastName" name="lastName" value="Odinson" autocomplete="on" required/>
         </div>
         </div>
         <div class="formRow">
           <div class="formCol">
           <label for="mail">EMAIL</label>
-          <input type="email" name="mail" id="mail">
+          <input type="email" name="mail" id="mail" autocomplete="on" required>
         </div>
           <div class="formCol">
           <label for="phone">PHONE NUMBER</label>
-          <input type="number" name="phone" id="phone">
+          <input type="number" name="phone" id="phone" autocomplete="on">
         </div>
         </div>
         <div class="formRow">
           <div class="formCol">
           <label for="pass">PASSWORD</label>
-          <input type="password" name="pass" id="pass">
-          <p id="passCheck"></p>
+          <input class="invalidPass" type="password" name="pass" id="pass" autocomplete="off" required>
+          <p id="passCheckText">* Passwords do not match</p>
         </div>
         <div class="formCol">
-          <label for="confirm">CONFIRM PASSWORD</label>
-          <input type="password" name="confirm" id="confirm">
+          <label for="confirmPass">CONFIRM PASSWORD</label>
+          <input class="invalidPass" type="password" name="confirmPass" id="confirmPass" autocomplete="off" required>
         </div>
         </div>
       </form>
     </div>
     <div class="thirdRow">
-      <button type="submit">Create Account</button>
+      <button type="submit" form="regForm">Create Account</button>
       <p>Already have an account? <a href="login">Log in</a></p>
     </div>
   </div>

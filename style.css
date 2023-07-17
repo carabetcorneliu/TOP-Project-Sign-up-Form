@@ -91,10 +91,9 @@ body {
 .secondRow {
     display: flex;
     flex: 1 1 29%;
-    /* padding: 2% 0 2% 3%; */
+    padding: 2% 0 2% 5%;
     background-color: white;
     box-shadow: 3px black;
-    padding-left: 5%;
 }
 
 .thirdRow {
@@ -152,9 +151,7 @@ input {
 }
 
 input:focus {
-    border: 1px solid blue;
     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.295);
-
 }
 
 label {
@@ -162,4 +159,33 @@ label {
     width: 300px;
     text-align: left;
     font-size: calc(7px + 1vw/4 + 1vh/2);
+}
+
+#passCheckText {
+    visibility: hidden;
+    padding: 0;
+    margin: 0;
+    font-size: calc(6px + 1vw/5 + 1vh/3);
+    color: red;
+}
+
+.invalidPass {
+    border: 2px solid red;
+    border-radius: 5px;
+}
+
+.validPass {
+    border: 2px solid green;
+    border-radius: 5px;
+}
+/* arrow removal from phone number input area */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
