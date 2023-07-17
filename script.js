@@ -10,14 +10,14 @@ const failCheck = () => {
     passCheckText.style.visibility = "visible";
     pass.classList.remove("validPass");
     confirmPass.classList.remove("validPass");
-    pass.classList.add("invalidPass");
-    confirmPass.classList.add("invalidPass")
+    pass.classList.add("error");
+    confirmPass.classList.add("error")
 }
 
 const passCheck = () => {
     passCheckText.style.visibility = "hidden";
-    pass.classList.remove("invalidPass");
-    confirmPass.classList.remove("invalidPass");
+    pass.classList.remove("error");
+    confirmPass.classList.remove("error");
     pass.classList.add("validPass");
     confirmPass.classList.add("validPass")
 }

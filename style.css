@@ -109,7 +109,7 @@ body {
     font-weight: bold;
     width: 260px;
     height: 55px;
-    background-color: #596D48;
+    background-color: rgba(11, 117, 1);
     border-radius: 10px;
     font-size: calc(6px + 1vw/2 + 1vh/3);
 }
@@ -120,7 +120,7 @@ body {
 }
 
 a {
-    color:#596D48;
+    color:rgba(11, 117, 1);
     font-weight: bold;
     text-decoration: none;
 }
@@ -151,7 +151,7 @@ input {
 }
 
 input:focus {
-    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.295);
+    box-shadow: 1px 2px 4px 1px rgb(63, 63, 245);
 }
 
 label {
@@ -163,21 +163,22 @@ label {
 
 #passCheckText {
     visibility: hidden;
-    padding: 0;
+    padding: 2px 0 0 0;
     margin: 0;
     font-size: calc(6px + 1vw/5 + 1vh/3);
     color: red;
 }
 
-.invalidPass {
+.error {
     border: 2px solid red;
     border-radius: 5px;
 }
 
 .validPass {
-    border: 2px solid green;
+    border: 2px solid rgba(11, 117, 1);
     border-radius: 5px;
 }
+
 /* arrow removal from phone number input area */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
