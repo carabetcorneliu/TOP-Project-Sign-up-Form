@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TOP - Project: Sign-up Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- left side container -->
+  <div class="leftContainer">
+    <div class="odinLogoContainer">
+      <img id="odinImg" src="./images/odin-lined.png" alt="Odin Logo lined">
+      <span>ODIN</span>
+    </div>
+    <p class="imageCredit">Photo by <u>Olena Sergienko</u> on <u>Unsplash</u></p>
+  </div>
+
+  <!-- right side container -->
+  <div class="rightContainer">
+    <div class="firstRow">
+      <p>This is not a real online service! You know you need something like this in your
+        life to help you realize your deepest dreams.
+        <br>
+        Sign up <em>now</em> to get started.
+      </p>
+      <p>You <em>know</em> you want to.</p>
+    </div>
+    <div class="secondRow">
+      <form action="" method="get">
+        <legend>Let's do this!</legend>
+        <div class="formRow">
+          <div class="formCol">
+          <label for="firstName">FIRST NAME</label>
+          <input type="text" id="firstName" name="firstName" value="Thor" />
+        </div>
+        <div class="formCol">
+          <label for="lastName">LAST NAME</label>
+          <input type="text" id="lastName" name="lastName" value="Odinson" />
+        </div>
+        </div>
+        <div class="formRow">
+          <div class="formCol">
+          <label for="mail">EMAIL</label>
+          <input type="email" name="mail" id="mail">
+        </div>
+          <div class="formCol">
+          <label for="phone">PHONE NUMBER</label>
+          <input type="number" name="phone" id="phone">
+        </div>
+        </div>
+        <div class="formRow">
+          <div class="formCol">
+          <label for="pass">PASSWORD</label>
+          <input type="password" name="pass" id="pass">
+          <p id="passCheck"></p>
+        </div>
+        <div class="formCol">
+          <label for="confirm">CONFIRM PASSWORD</label>
+          <input type="password" name="confirm" id="confirm">
+        </div>
+        </div>
+      </form>
+    </div>
+    <div class="thirdRow">
+      <button type="submit">Create Account</button>
+      <p>Already have an account? <a href="login">Log in</a></p>
+    </div>
+  </div>
+
+</body>
+
+</html>
